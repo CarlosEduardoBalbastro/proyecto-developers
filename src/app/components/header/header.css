@@ -36,7 +36,7 @@
   margin-bottom: 30px;
 }
 
-.hero-content button {
+.hero-content a {
   padding: 12px 24px;
   background-color: #4e975100;
   border: none;
@@ -49,6 +49,6 @@
 
 }
 
-.hero-content button:hover {
+.hero-content a:hover {
   background-color: #388e3c;
 }
