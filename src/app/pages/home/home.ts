@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { Header } from '../../components/header/header';
 import { Cards } from '../../components/cards/cards';
 
 @Component({
   selector: 'app-home',
-  imports: [Header, Cards],
+  standalone: true,
+  imports: [Cards],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

@@ -1,0 +1,26 @@
+
+.container {
+    text-align: center;
+    margin-top: 25%;
+}
+
+
+
+h2 {
+   font-size: 4rem;
+    color: var(--texto-principal);
+  
+}
+
+
+a {
+    color: var(--enlace-principal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+   
+
+}
+
+a:hover {
+    color: #00ffc8;
+}

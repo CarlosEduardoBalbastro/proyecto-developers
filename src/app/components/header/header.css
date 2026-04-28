@@ -1,54 +1,86 @@
-.hero {
-  position: relative;
-  height: 100vh;
-  background-image: url('https://images.pexels.com/photos/13544822/pexels-photo-13544822.jpeg'); /* podés cambiarla */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* capa oscura */
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* contenido centrado */
-.hero-content {
-  position: relative;
-  text-align: center;
-  color: white;
-  max-width: 600px;
-  padding: 20px;
-}
-
-.hero-content h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.hero-content a {
-  padding: 12px 24px;
-  background-color: #4e975100;
-  border: none;
-  color: #f1f1f1;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 6px;
-  border: 1px solid #f1f1f1;
-  transition: background-color 0.3s ease;
+.topweb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
 
 }
 
-.hero-content a:hover {
-  background-color: #388e3c;
+
+
+.topweb ul {
+    list-style: none;
+    margin: .3rem;
+  
+   
 }
+
+.topweb ul li {
+    display: inline;
+    /* margin: 1rem; */
+    /* padding: rem; */
+    margin-right: 20px;
+  
+}
+
+
+.topweb ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: normal;
+    /* font-size: 18px; */
+  
+}   
+
+
+
+.topweb svg:hover {
+   
+    color: #00ffc8; ;
+   
+}
+
+.encabezado {
+   
+    padding: 20px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    
+    
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.col {
+    width: 100%;
+    justify-content: center;
+}
+
+.tecnologias {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-top: 1rem;
+    color: var(--texto-secundario);
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    /* transition: ease-in-out 0.3s hover; */
+    /* animation: textoConSombra 5s linear infinite alternate; */
+}
+
+
+/* .tecnologias:hover  {
+    font-weight: 400;
+    text-shadow: 0cap 0px 6px #00ffc85b;
+} */

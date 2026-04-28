@@ -1,23 +1,51 @@
-<section class="cards-section" id="especies">
-  <h2>Nuestras Especies</h2>
+<section id="proyectos" class="projects-section">
+    <h2 class="section-title">Proyectos Destacados</h2>
+    
+    <div class="projects-grid">
 
-  <div class="cards-container">
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Árbol 1">
-      <h3>Algarrobo</h3>
-      <p>Árbol nativo resistente y fundamental para el ecosistema.</p>
-    </div>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Árbol 2">
-      <h3>Quebracho</h3>
-      <p>Conocido por su dureza y valor en los bosques chaqueños.</p>
-    </div>
+        @for (proyecto of proyectos; track proyecto.id )
+        {
+                <article class="project-card">
+                <div class="project-image">
+                    <a [href]="proyecto.url" target="_blank" rel="noopener noreferrer">
+                        <img [src]="proyecto.imagen" [alt]="proyecto.nombre" loading="lazy">    
+                    </a>    
+                </div>
+                   <div class="project-content">
+                <h3 class="project-name">{{proyecto.nombre}}</h3>
+                
+                <div class="project-tags">
+                    @for (tecnologia of proyecto.tecnologias; track tecnologia)
+                    {
+                        <span>{{tecnologia}}</span>
+                    }
+                   
+                    
+                    
+                </div>
+                
+                <ul class="project-features">
+                    <li>
+                      {{proyecto.descripcion}}  
+                    </li>
+                  
+              
+                </ul>
+                
+                <a [href]="proyecto.url" target="_blank" class="btn-project">
+                    Ver Sitio Web
+                </a>
+            </div>
+            </article>
 
-    <div class="card">
-      <img src="https://via.placeholder.com/300x200" alt="Árbol 3">
-      <h3>Espinillo</h3>
-      <p>Florece con un amarillo intenso y atrae polinizadores.</p>
-    </div>
-  </div>
+        }
+        @empty
+        {
+            <p class="no-projects">{{mensajeNoEncontrado}}</p>
+        }
+
+     
+        </div>
+  
 </section>

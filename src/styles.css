@@ -1,1 +1,100 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  /* Definición de colores */
+    --bg-principal: #1a1a1b;
+    --bg-secundario: #2d2d2e;
+    --texto-principal: #e2e2e2;
+    --texto-secundario: #a0a0a0;
+    
+    /* Fuente que elegimos antes */
+    --fuente-principal: 'Roboto Slab', serif;
+}
+
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('/assets/font/Roboto/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-display: swap;
+    font-style: normal;
+
+}
+
+
+/* Registro de Inter */
+@font-face {
+    font-family: 'Inter';
+    src: url('/assets/font/Inter/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    color: var(--texto-principal);
+}
+
+p {
+    color: var(--texto-secundario);
+}
+
+.bi-globe-americas {
+    color: #e2e2e2;
+}
+
+.bi-github {
+    color: #e2e2e2;
+}
+
+.img-perfil {
+    position: absolute;
+    top: 20%;
+    width: 9%;
+    max-width: 150px;
+    z-index: 1;
+}
+
+.img-perfil:hover {
+    box-shadow: 0px 0px 6px  #00ffc8e7;
+    border-radius: 50%;
+    /* transform: scale(1.1); */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#myBtn {
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width:1400px) {
+    .img-perfil {
+        width: 6%;
+        max-width: 80px;
+      /* display: none; */
+    }
+}
+
+@media (max-width: 600px) {
+    .img-perfil {
+      display: none;
+    }
+    
+}
